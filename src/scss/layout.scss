@@ -1,0 +1,67 @@
+.container {
+  max-width: 120rem;
+  background-color: $light-grey-2;
+  margin: 8rem auto;
+  box-shadow: 0 2rem 5rem rgba(0,0,0,0.3);
+  
+  @media screen and (max-width: $bp-largest) {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+.header {
+  font-size: 1.4rem;
+  font-family: 'Noto Sans TC', sans-serif;
+
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: $light-grey-2;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  
+  @media screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
+}
+
+.sidebar {
+  background-color: $dark-grey-1;
+  font-family: 'Noto Sans TC', sans-serif;
+  flex: 0 0 18%; // flex-grow flex-shrink flex-basis;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-view {
+  flex: 1;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.details {
+  background-color: $light-grey-2;
+  display: flex;
+  padding: 4rem;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 1.4rem;
+  
+  @media screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+}
+
+.user-reviews {
+  flex: 1;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 1.4rem;
+}
+
+
