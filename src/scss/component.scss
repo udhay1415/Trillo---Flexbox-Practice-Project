@@ -367,7 +367,7 @@
     background-size: cover;
     
     // New browsers
-    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) { // Feature query
       background-color: $background-primary-dark;
       -webkit-mask-image: url(../img/SVG/right-chevron.svg);
       -webkit-mask-size: cover;
